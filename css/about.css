@@ -475,351 +475,345 @@ nav ul li a {
 .menu-toggle:hover .menu {
   display: block;
 }
-
-/* Основной раздел тут */
-  .main-about {
-      max-width: 100%;
-      /* min-height: 1480px; */
-      background-color: #E7E6E6;
-      text-align: center;
-      margin: 0;
-  }
-
-  .main-about-items {
-    max-width: 1270px;
-    /* height: 1480px; */
-    margin: auto;
-    padding: 2% 0;
-  }
-
-  .faq-questions-items {
-    max-width: 850px;
-    max-height: auto;
-    margin: auto;
-    margin-bottom: 50px;
-    padding: 15px 10px;
-  }
-
-  .faq-questions-items h1 {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
-    color: #4D4957;
-    padding: 0;
-    margin: 0;
-  }
-
-  @media only all and (max-width: 576px) {
-    .faq-questions-items h1   {
-      font-size: 30px;
-    }
-    }
-
-  .faq-question-first-item {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    color: #9F9DA3;
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-  }
-
-  .faq-question-second-item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: #9F9DA3;
-    padding: 0;
-    margin: 0;
-  }
-
-  .questions-items {
+.main-about {
     max-width: 100%;
-    max-height: 100%;
-  }
-
-  /* Аккордион */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* изменено */
-    grid-auto-rows: minmax(100px, auto); /* добавлено */
-    grid-gap: 20px;
-    padding: 0 20px;
-  }
-
-  @media only all and (min-width: 962px) {
-    .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* изменено */
-      grid-auto-rows: minmax(100px, auto); /* добавлено */
-    }
-  }
-
-  @media only all and (max-width: 576px) {
-    .grid-container {
-      padding: 0 10px;
-    }
-  }
-
-  .grid-item {
     background-color: #E7E6E6;
-    border: 1px solid #ccc;
-    padding: 20px;
     text-align: center;
-    transition: all 0.3s ease;
-    align-self: start; /* добавлено */
-  }
+    margin: 0;
+}
 
-  .grid-item::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    float: right;
-    margin-top: 5px;
-    border-top: 2px solid #4D4957;
-    border-right: 2px solid #4D4957;
-    transform: rotate(45deg);
-  }
-
-  @media only all and (min-width: 962px) {
-    .grid-item {
-      height: 200px;
-      text-align: left;
-    }
-  }
-
-  @media only all and (max-width: 576px) {
-    .grid-item {
-      max-width: 100%;
-    }
-  }
-
-  .grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  .grid-item-header {
-    color: #4D4957;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-
-  @media only all and (max-width: 576px) {
-    .grid-item-header {
-      font-size: 15px;
-    }
-  }
-
-  .click-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  .grid-item-content {
-    display: none;
-  }
-  .grid-item.active .grid-item-content {
-    display: block;
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 25px;
-    color: rgba(77, 73, 87, 0.5);
-  }
-
-  .grid-item.active::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    float: right;
-    margin-bottom: 10px;
-    border-top: 2px solid #4D4957;
-    border-right: 2px solid #4D4957;
-    transform: rotate(135deg);
-  }
-
-  @media only all and (max-width: 576px) {
-    .grid-item.active .grid-item-content {
-      font-size: 12px;
-    }
-  }
-
-  /* Аккордион */
-/* Основной раздел тут */
-
-.main-footer {
-  margin: 0;
-  max-width: 100%;
-  min-height: 250px;
-  background-color: #4D4957;
-  padding: 40px;
-  }
-  
-  .footer-items {
-  max-width: 100%;
-  min-height: 200px;
+.main-about-items {
+  max-width: 1270px;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  }
-  
-  @media only all and (max-width: 576px) {
-  .footer-items  {
-    flex-direction: column;
-  }
-  }
-  
-  .footer-item {
-  width: 600px;
-  display: flex;
-  justify-content: space-between;
-  }
-  
-  @media only all and (max-width: 768px) {
-  .footer-item  {
-    flex-direction: column;
-  }
-  }
-  
-  @media only all and (max-width: 576px) {
-  .footer-item  {
-    width: 100%;
-  }
-  }
-  
-  @media only all and (max-width: 768px) {
-  .footer-item img  {
-    margin: auto;
-  }
-  }
-  
-  .footer-item .questions {
-  max-width: 100%;
-  text-align: left;
-  color: #9f9da3;
+  padding: 2% 0;
+}
+
+.faq-questions-items {
+  max-width: 850px;
+  max-height: auto;
   margin: auto;
-  padding: 7px;
-  }
-  
-  @media only all and (max-width: 576px) {
-  .footer-item .questions   {
-    font-size: 13px;
-  }
-  }
-  
-  @media only all and (max-width: 768px) {
-  .footer-item .questions  {
-    text-align: center;
-  }
-  }
-  
-  .social-list {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  }
-  
-  .social-list:first-child {
-  margin-right: 50px;
-  }
-  
-  @media only all and (max-width: 768px) {
-  .social-list {
-    margin: 0 auto;
-    width: 100%;
-  }
-  }
-  
-  .social-list p {
-  padding: 0;
-  margin: auto;
-  color: #f4f4f4;
-  }
-  
-  @media only all and (max-width: 768px) {
-  .social-list p {
-    margin-bottom: 35px;
-  }
-  }
-  
-  .footer-item ul {
-  max-width: 100%;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: auto;
-  }
-  
-  .footer-item ul li {
-  padding: 0;
-  margin: 0;
-  width: 37px; 
-  height: 37px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  }
-  
-  @media only all and (max-width: 576px) {
-  .footer-item ul li {
-    margin-bottom: 18px;
-  }
-  }
-  
-  .footer-item ul li img {
-  margin: auto;
-  }
-  
-  @media only all and (max-width: 992px) {
-  .footer-item ul li {
-    width: 28px; 
-    height: 28px;
-  }
-  }
-  
-  .social-list .phone a {
-  color: #F4F4F4;
-  font-style: italic;
-  text-decoration: none;
-  }
-  
-  .social-list address {
-  color: #F4F4F4;
-  font-size: 13px;
-  }
-  
-  .go-top {
-  position: fixed; 
-  right: 10px; 
-  top: 90%; 
-  transform: translateY(-50%); 
-  cursor: pointer; 
-  display: none; 
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgba(254, 254, 255, 0.5);
-  background-color: rgba(20, 20, 20, 0.37);
+  margin-bottom: 50px;
   padding: 15px 10px;
+}
+
+.faq-questions-items h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  color: #4D4957;
+  padding: 0;
+  margin: 0;
+}
+
+@media only all and (max-width: 576px) {
+  .faq-questions-items h1   {
+    font-size: 30px;
   }
-  
-  .go-top:hover {
-  color: rgb(255, 255, 255);
-  border: 1px solid rgba(254, 254, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0.705);
   }
-  
-  .go-top-show {
+
+.faq-question-first-item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9F9DA3;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.faq-question-second-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #9F9DA3;
+  padding: 0;
+  margin: 0;
+}
+
+.questions-items {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Аккордион */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+@media only all and (min-width: 962px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media only all and (max-width: 576px) {
+  .grid-container {
+    padding: 0 10px;
+  }
+}
+
+.grid-item {
+  background-color: #E7E6E6;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  align-self: start;
+}
+
+.grid-item::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  float: right;
+  margin-top: 5px;
+  border-top: 2px solid #4D4957;
+  border-right: 2px solid #4D4957;
+  transform: rotate(45deg);
+}
+
+@media only all and (min-width: 962px) {
+  .grid-item {
+    height: 200px;
+    text-align: left;
+  }
+}
+
+@media only all and (max-width: 576px) {
+  .grid-item {
+    max-width: 100%;
+  }
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.grid-item-header {
+  color: #4D4957;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@media only all and (max-width: 576px) {
+  .grid-item-header {
+    font-size: 15px;
+  }
+}
+
+.click-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.grid-item-content {
+  display: none;
+}
+.grid-item.active .grid-item-content {
   display: block;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(77, 73, 87, 0.5);
+}
+
+.grid-item.active::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  float: right;
+  margin-bottom: 10px;
+  border-top: 2px solid #4D4957;
+  border-right: 2px solid #4D4957;
+  transform: rotate(135deg);
+}
+
+@media only all and (max-width: 576px) {
+  .grid-item.active .grid-item-content {
+    font-size: 12px;
   }
+}
+
+/* Аккордион */
+.main-footer {
+margin: 0;
+max-width: 100%;
+min-height: 250px;
+background-color: #4D4957;
+padding: 40px;
+}
+
+.footer-items {
+max-width: 100%;
+min-height: 200px;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+}
+
+@media only all and (max-width: 576px) {
+.footer-items  {
+  flex-direction: column;
+}
+}
+
+.footer-item {
+width: 600px;
+display: flex;
+justify-content: space-between;
+}
+
+@media only all and (max-width: 768px) {
+.footer-item  {
+  flex-direction: column;
+}
+}
+
+@media only all and (max-width: 576px) {
+.footer-item  {
+  width: 100%;
+}
+}
+
+@media only all and (max-width: 768px) {
+.footer-item img  {
+  margin: auto;
+}
+}
+
+.footer-item .questions {
+max-width: 100%;
+text-align: left;
+color: #9f9da3;
+margin: auto;
+padding: 7px;
+}
+
+@media only all and (max-width: 576px) {
+.footer-item .questions   {
+  font-size: 13px;
+}
+}
+
+@media only all and (max-width: 768px) {
+.footer-item .questions  {
+  text-align: center;
+}
+}
+
+.social-list {
+width: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.social-list:first-child {
+margin-right: 50px;
+}
+
+@media only all and (max-width: 768px) {
+.social-list {
+  margin: 0 auto;
+  width: 100%;
+}
+}
+
+.social-list p {
+padding: 0;
+margin: auto;
+color: #f4f4f4;
+}
+
+@media only all and (max-width: 768px) {
+.social-list p {
+  margin-bottom: 35px;
+}
+}
+
+.footer-item ul {
+max-width: 100%;
+display: flex;
+justify-content: space-around;
+list-style: none;
+padding: 0;
+margin: 0;
+margin-bottom: auto;
+}
+
+.footer-item ul li {
+padding: 0;
+margin: 0;
+width: 37px; 
+height: 37px;
+background: #FFFFFF;
+border-radius: 50%;
+display: flex;
+align-items: center;
+}
+
+@media only all and (max-width: 576px) {
+.footer-item ul li {
+  margin-bottom: 18px;
+}
+}
+
+.footer-item ul li img {
+margin: auto;
+}
+
+@media only all and (max-width: 992px) {
+.footer-item ul li {
+  width: 28px; 
+  height: 28px;
+}
+}
+
+.social-list .phone a {
+color: #F4F4F4;
+font-style: italic;
+text-decoration: none;
+}
+
+.social-list address {
+color: #F4F4F4;
+font-size: 13px;
+}
+
+.go-top {
+position: fixed; 
+right: 10px; 
+top: 90%; 
+transform: translateY(-50%); 
+cursor: pointer; 
+display: none; 
+font-size: 20px;
+color: rgb(255, 255, 255);
+border: 1px solid rgba(254, 254, 255, 0.5);
+background-color: rgba(20, 20, 20, 0.37);
+padding: 15px 10px;
+}
+
+.go-top:hover {
+color: rgb(255, 255, 255);
+border: 1px solid rgba(254, 254, 255, 0.5);
+background-color: rgba(0, 0, 0, 0.705);
+}
+
+.go-top-show {
+display: block;
+}
