@@ -1,4 +1,3 @@
-
 // Прелоадер
 window.addEventListener('load', function () {
   setTimeout(function () {
@@ -20,7 +19,6 @@ gridItems.forEach(item => {
   });
 });
 // Аккордион
-
 // Стрелка прокрутки
 const goTopBtn = document.querySelector(".go-top");
 
@@ -31,9 +29,9 @@ function trackScroll() {
   const scrolled = window.pageYOffset;
   const coords = document.documentElement.clientHeight;
   if (scrolled > coords) {
-    goTopBtn.classList.add("go-top--show");
+    goTopBtn.classList.add("go-top-show");
   } else {
-    goTopBtn.classList.remove("go-top--show");
+    goTopBtn.classList.remove("go-top-show");
   }
 }
 
@@ -44,12 +42,11 @@ function goTop() {
   }
 }
 // Стрелка прокрутки
-
 // Меню бургер
-const navbarBurger = document.querySelector('.navbar_burger'); 
-const navbarMenu = document.querySelector('.navbar_menu');
+const navbarBurger = document.querySelector('.navbar-burger'); 
+const navbarMenu = document.querySelector('.navbar-menu');
 
-const menuLinks = document.querySelectorAll('.navbar_menu a');
+const menuLinks = document.querySelectorAll('.navbar-menu a');
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -65,7 +62,6 @@ navbarBurger.addEventListener('click', () => {
   navbarMenu.classList.toggle('active'); 
 });
 // Меню бургер
-
 // Фиксация навбара
 window.addEventListener('scroll', function() {
   const navbar = document.querySelector('.navbar');
@@ -82,9 +78,8 @@ window.addEventListener('scroll', function() {
   }
 });
 // Фиксация навбара
-
 // Активная ссылка
-const navbarLinks = document.querySelectorAll('.navbar_menu a');
+const navbarLinks = document.querySelectorAll('.navbar-menu a');
 
 navbarLinks.forEach(link => {
   link.addEventListener('click', function() {
