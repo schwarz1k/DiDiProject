@@ -122,14 +122,14 @@ address {
   font-size: 22px;
   line-height: 25px;
   margin: 0;
-  margin-bottom: 41px;
   text-align: center;
+  margin-bottom: 7px;
 }
 
 .header-about-items .phone {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 7px;
 }
 
 .header-about-items .phone a {
@@ -139,6 +139,12 @@ address {
   padding: 0;
   margin: 0;
   font-style: italic;
+}
+
+.header-about-items .phone a:hover {
+  color: #ffffff;
+  border-bottom: solid white 2px;
+  padding: 2px;
 }
 
 .header-about-items address {
@@ -223,6 +229,7 @@ address {
 .header-about-items button:active {
   transform: translate(1px);
 }
+
 
 .navbar {
   display: flex;
@@ -475,6 +482,7 @@ nav ul li a {
 .menu-toggle:hover .menu {
   display: block;
 }
+
 .main-about {
     max-width: 100%;
     background-color: #E7E6E6;
@@ -648,6 +656,7 @@ nav ul li a {
 }
 
 /* Аккордион */
+
 .main-footer {
 margin: 0;
 max-width: 100%;

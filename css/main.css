@@ -122,14 +122,14 @@ address {
   font-size: 22px;
   line-height: 25px;
   margin: 0;
-  margin-bottom: 41px;
   text-align: center;
+  margin-bottom: 7px;
 }
 
 .header-about-items .phone {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 7px;
 }
 
 .header-about-items .phone a {
@@ -139,6 +139,12 @@ address {
   padding: 0;
   margin: 0;
   font-style: italic;
+}
+
+.header-about-items .phone a:hover {
+  color: #ffffff;
+  border-bottom: solid white 1px;
+  padding: 2px;
 }
 
 .header-about-items address {
