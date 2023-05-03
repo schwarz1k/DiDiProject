@@ -720,6 +720,7 @@ width: 50%;
 display: flex;
 justify-content: center;
 flex-direction: column;
+margin: auto;
 }
 
 .social-list:first-child {
@@ -735,14 +736,9 @@ margin-right: 50px;
 
 .social-list p {
 padding: 0;
-margin: auto;
+margin: 0;
+margin-bottom: 15px;
 color: #f4f4f4;
-}
-
-@media only all and (max-width: 768px) {
-.social-list p {
-  margin-bottom: 35px;
-}
 }
 
 .footer-item ul {
