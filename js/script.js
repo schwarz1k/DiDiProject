@@ -11,13 +11,27 @@ if (window.innerWidth < 768) {
   }, 2700);
 }
 // Аккордион
-const gridItems = document.querySelectorAll('.grid-item');
+const gridItems = document.querySelectorAll('.btn-questions-item');
 gridItems.forEach(item => {
-  const header = item.querySelector('.grid-item-header');
+  const header = item.querySelector('.questions-item-header');
   header.addEventListener('click', () => {
     item.classList.toggle('active');
   });
 });
+
+const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+const accordionItems = document.querySelectorAll('.btn-questions-item');
+
+for (let i = 0; i < accordionItems.length; i++) {
+  accordionItems[i].addEventListener('click', function(event) {
+    if (event.target !== accordionTriggers[i]) {
+      // Показать или скрыть содержимое текущего блока
+      this.classList.toggle('active');
+      event.stopPropagation();
+    }
+  });
+}
+
 // Аккордион
 // Стрелка прокрутки
 const goTopBtn = document.querySelector(".go-top");

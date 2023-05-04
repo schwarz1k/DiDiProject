@@ -546,7 +546,7 @@ nav ul li a {
 
 /* Аккордион */
 
-.grid-container {
+.questions-container-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
@@ -555,28 +555,29 @@ nav ul li a {
 }
 
 @media only all and (min-width: 962px) {
-  .grid-container {
+  .questions-container-items {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: minmax(100px, auto);
   }
 }
 
 @media only all and (max-width: 576px) {
-  .grid-container {
+  .questions-container-items {
     padding: 0 10px;
   }
 }
 
-.grid-item {
+.btn-questions-item {
   background-color: #E7E6E6;
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
   transition: all 0.3s ease;
   align-self: start;
+  cursor: pointer;
 }
 
-.grid-item::before {
+.btn-questions-item::before {
   content: '';
   width: 5px;
   height: 5px;
@@ -588,23 +589,23 @@ nav ul li a {
 }
 
 @media only all and (min-width: 962px) {
-  .grid-item {
+  .btn-questions-item {
     height: 200px;
     text-align: left;
   }
 }
 
 @media only all and (max-width: 576px) {
-  .grid-item {
+  .btn-questions-item {
     max-width: 100%;
   }
 }
 
-.grid-item:hover {
+.btn-questions-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-.grid-item-header {
+.questions-item-header {
   color: #4D4957;
   font-size: 20px;
   font-weight: bold;
@@ -613,25 +614,15 @@ nav ul li a {
 }
 
 @media only all and (max-width: 576px) {
-  .grid-item-header {
+  .questions-item-header {
     font-size: 15px;
   }
 }
 
-.click-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  pointer-events: none;
-}
-
-.grid-item-content {
+.questions-item-content {
   display: none;
 }
-.grid-item.active .grid-item-content {
+.btn-questions-item.active .questions-item-content {
   display: block;
   max-width: 100%;
   font-size: 14px;
@@ -639,7 +630,7 @@ nav ul li a {
   color: rgba(77, 73, 87, 0.5);
 }
 
-.grid-item.active::before {
+.btn-questions-item.active::before {
   content: '';
   width: 5px;
   height: 5px;
@@ -651,7 +642,7 @@ nav ul li a {
 }
 
 @media only all and (max-width: 576px) {
-  .grid-item.active .grid-item-content {
+  .btn-questions-item.active .questions-item-content {
     font-size: 12px;
   }
 }
