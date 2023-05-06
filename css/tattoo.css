@@ -603,6 +603,10 @@ nav ul li a {
     display: flex;
     align-items: center;
     }
+
+    .footer-item ul li:hover {
+      background: none;
+    }
     
     @media only all and (max-width: 576px) {
     .footer-item ul li {
@@ -626,6 +630,12 @@ nav ul li a {
     font-style: italic;
     text-decoration: none;
     }
+
+    .social-list .phone a:hover { 
+      color: #ffffff;
+      border-bottom: solid white 1px;
+      padding: 2px;
+  }
     
     .social-list address {
     color: #F4F4F4;
